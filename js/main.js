@@ -43,3 +43,44 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+
+// Modal
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Carousel
+
+const carousel = document.getElementById('carousel');
+const cards = carousel.querySelectorAll('.product__card');
+const gap = 10;
+
+window.addEventListener('load', () => {
+    const cardWidth = cards[0].offsetWidth + gap;
+
+    function scrollCarousel(direction) {
+        const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+        const currentScroll = carousel.scrollLeft;
+
+        let targetScroll = currentScroll + direction * cardWidth;
+
+        if (direction === 1 && currentScroll >= maxScrollLeft - 1) {
+            // Go to start
+            carousel.scrollTo({ left: 0, behavior: 'smooth' });
+        } else if (direction === -1 && currentScroll <= 0) {
+            // Go to end
+            carousel.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+        } else {
+            carousel.scrollBy({ left: direction * cardWidth, behavior: 'smooth' });
+        }
+    }
+
+    window.scrollCarousel = scrollCarousel;
+});

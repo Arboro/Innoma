@@ -39,10 +39,29 @@
                             </ul>
                         </div>
                         <div class="header__btn">
-                            <button class="login">Войти</button>
+                            <button class="login"
+                                onclick="document.getElementById('id01').style.display='block'">Войти</button>
                             <button class="nav-btn" onclick="openMenu()"></button>
                         </div>
+                        <div id="id01" class="modal">
 
+                            <form class="modal__content animate" action="/action_page.php" method="post">
+                                <div class="modal__imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'"
+                                        class="close"></span>
+                                </div>
+                                <div class="modal__container">
+                                    <h2 class="modal__title">Вход</h2>
+                                    <input class="modal__input" type="text" placeholder="Е-маил" name="uname" required>
+                                    <input class="modal__input" type="password" placeholder="Пароль" name="psw"
+                                        required>
+
+                                    <button class="modal__btn" type="submit">Войти</button>
+
+                                    <a href="#" class="modal__register">Зарегистрироваться</a>
+                                </div>
+                            </form>
+                        </div>
                     </nav>
                 </div>
             </header>
@@ -551,7 +570,7 @@
                     </div>
                 </div>
             </section>
-            <!-- <section class="investors">
+            <section class="investors">
                 <div class="container">
                     <div class="investors__wrapper">
                         <div class="investors__info">
@@ -582,19 +601,490 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
+            <section class="result">
+                <div class="container">
+                    <div class="result__wrapper">
+                        <h2 class="result__title">Что вы получите в результате?</h2>
+                        <div class="result__box">
+                            <div class="result__item">
+                                <p class="result__item__number">01</p>
+                                <h3 class="result__item__title">Документы по продукту</h3>
+                                <p class="result__item__description">Бизнес план, отчет по анализу рынка, маркетинговый
+                                    план, unit экономика, список гипотез, проект MVP</p>
+                            </div>
+                            <div class="result__item">
+                                <p class="result__item__number">02</p>
+                                <h3 class="result__item__title">Обратная связь от рынка</h3>
+                                <p class="result__item__description">Проведение исследования целевой аудитории позволит
+                                    сформировать Product market fit</p>
+                            </div>
+                            <div class="result__item">
+                                <p class="result__item__number">03</p>
+                                <h3 class="result__item__title">Продвижение продукта</h3>
+                                <p class="result__item__description">Продвижение продукта через аналитические системы
+                                    партнеров</p>
+                            </div>
+                            <div class="result__item">
+                                <p class="result__item__number">04</p>
+                                <h3 class="result__item__title">Подписка на отчеты</h3>
+                                <p class="result__item__description">Подписка на аналитические отчеты по международным
+                                    рынкам высокотехнологичных сфер</p>
+                            </div>
+                            <div class="result__item">
+                                <p class="result__item__number">05</p>
+                                <h3 class="result__item__title">Подписка на отчеты</h3>
+                                <p class="result__item__description">Подписка на аналитические отчеты по международным
+                                    рынкам высокотехнологичных сфер</p>
+                            </div>
+                            <div class="result__item">
+                                <p class="result__item__number">06</p>
+                                <h3 class="result__item__title">Подписка на отчеты</h3>
+                                <p class="result__item__description">Подписка на аналитические отчеты по международным
+                                    рынкам высокотехнологичных сфер</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="price">
+                <div class="container">
+                    <div class="price__wrapper">
+                        <h2 class="price__title">Стоимость</h2>
+                        <div class="price__box">
+                            <div class="price__item">
+                                <div class="price__item__head">
+                                    <img src="./img/price/price-1.svg" alt="" class="price__item__head__img">
+                                    <h3 class="price__item__head__title">Анализ международных
+                                        рынков</h3>
+                                </div>
+                                <div class="price__item__body">
+                                    <h4 class="price__item__body__title">Что входит в отчет?</h4>
+                                    <ol class="price__item__body__list">
+                                        <li class="price__item__body__list__item">Анализ конкурентов</li>
+                                        <li class="price__item__body__list__item">Анализ инвесторов</li>
+                                        <li class="price__item__body__list__item">Размеры рынка (TAM,SAM,SOM)</li>
+                                        <li class="price__item__body__list__item">Анализ СМИ</li>
+                                        <li class="price__item__body__list__item">Анализ запрос в сети интернет</li>
+                                    </ol>
+                                </div>
+                                <div class="price__item__footer">
+                                    <div class="price__item__body__block">
+                                        <p class="price__item__body__block__title">Готовность</p>
+                                        <div class="price__item__body__block__value">7 раб. дней</div>
+                                    </div>
+                                    <div class="price__item__body__block">
+                                        <p class="price__item__body__block__title">Язык</p>
+                                        <div class="price__item__body__block__value">рус. / англ.</div>
+                                    </div>
+                                    <div class="price__item__body__block">
+                                        <p class="price__item__body__block__title">Стоимость</p>
+                                        <div class="price__item__body__block__value"><span
+                                                class="price__accent">&dollar;1
+                                                000</span></div>
+                                    </div>
+                                    <a href="#" class="price__item__body__link">Оставить заявку</a>
+                                </div>
+                            </div>
+                            <div class="price__item">
+                                <div class="price__item__head">
+                                    <img src="./img/price/price-2.svg" alt="" class="price__item__head__img">
+                                    <h3 class="price__item__head__title">Упаковка стартапа
+                                        под локальные рынки</h3>
+                                </div>
+                                <div class="price__item__body">
+                                    <h4 class="price__item__body__title">Что входит в отчет?</h4>
+                                    <ol class="price__item__body__list">
+                                        <li class="price__item__body__list__item">Анализ локальных рынков</li>
+                                        <li class="price__item__body__list__item">Бизнес план</li>
+                                        <li class="price__item__body__list__item">Питч презентация</li>
+                                        <li class="price__item__body__list__item">Финансовый план</li>
+                                        <li class="price__item__body__list__item">Расчет юнит экономики</li>
+                                        <li class="price__item__body__list__item">Проведение каст дева</li>
+                                    </ol>
+                                </div>
+                                <div class="price__item__footer">
+                                    <div class="price__item__body__block">
+                                        <p class="price__item__body__block__title">Готовность</p>
+                                        <div class="price__item__body__block__value">7 раб. дней</div>
+                                    </div>
+                                    <div class="price__item__body__block">
+                                        <p class="price__item__body__block__title">Язык</p>
+                                        <div class="price__item__body__block__value">рус. / англ.</div>
+                                    </div>
+                                    <div class="price__item__body__block">
+                                        <p class="price__item__body__block__title">Стоимость</p>
+                                        <div class="price__item__body__block__value"><span
+                                                class="price__accent">&dollar;1 000</span></div>
+                                    </div>
+                                    <a href="#" class="price__item__body__link">Оставить заявку</a>
+                                </div>
+
+                            </div>
+                            <div class="price__item">
+                                <div class="price__item__head">
+                                    <img src="./img/price/price-3.svg" alt="" class="price__item__head__img">
+                                    <h3 class="price__item__head__title">Анализ международных
+                                        рынков</h3>
+                                </div>
+                                <div class="price__item__body">
+                                    <h4 class="price__item__body__title">Что входит в отчет?</h4>
+                                    <ol class="price__item__body__list">
+                                        <li class="price__item__body__list__item">Анализ конкурентов</li>
+                                        <li class="price__item__body__list__item">Анализ инвесторов</li>
+                                        <li class="price__item__body__list__item">Размеры рынка (TAM,SAM,SOM)</li>
+                                    </ol>
+                                </div>
+                                <div class="price__item__footer">
+                                    <div class="price__item__body__block">
+                                        <p class="price__item__body__block__title">Готовность</p>
+                                        <div class="price__item__body__block__value">7 раб. дней</div>
+                                    </div>
+                                    <div class="price__item__body__block">
+                                        <p class="price__item__body__block__title">Язык</p>
+                                        <div class="price__item__body__block__value">рус. / англ.</div>
+                                    </div>
+                                    <div class="price__item__body__block">
+                                        <p class="price__item__body__block__title">Стоимость</p>
+                                        <div class="price__item__body__block__value"><span
+                                                class="price__accent">&dollar;1
+                                                000</span></div>
+                                    </div>
+                                    <a href="#" class="price__item__body__link">Оставить заявку</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="we">
+                <div class="container">
+                    <div class="we__wrapper">
+                        <h2 class="we__title">Кто мы?</h2>
+                        <div class="we__company">
+                            <img src="./img/we.png" alt="" class="we__company__img">
+                            <div class="we__company__content">
+                                <p class="we__company__description"><span
+                                        class="we__company__description__accent">INNOMA.VC</span> - Международное
+                                    аналитическое агентство по запуску IT бизнеса на локальных рынках регионов Азии,
+                                    Ближнего
+                                    Востока, Латинской Америки, Африки.</p>
+                                <p class="we__company__team">Наша команда состоит из профессионалов своего дела и
+                                    основной нашей целью является помощь IT компаниям получить
+                                    необходимые знания и пакеты документов, чтобы успешно запустить свой продукт на
+                                    международных рынках.</p>
+                            </div>
+                        </div>
+                        <div class="we__person">
+                            <img src="./img/roman.png" alt="" class="we__person__img">
+                            <div class="we__person__content">
+                                <p class="we__person__content__description">Всем привет! Меня зовут Роман. Последние
+                                    6 лет я являюсь частью
+                                    инновационной экосистемы СНГ, прошел путь от проектного
+                                    менеджера до руководителя продукта по автоматизированному скаутингу и скорингу
+                                    стартапов. За 6 лет работы я увидел
+                                    множество ошибок и отсутствие ориентации акселерационных программ под запросы
+                                    стартапов. Все акселераторы выполнялись
+                                    ради акселераторв и выполнения КПЭ.</p>
+                                <div class="we__person__content__info">
+                                    <p class="we__person__name">Роман Гайн</p>
+                                    <p class="we__person__post">Основатель INNOMA.VC</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="we__gallery">
+                            <div class="we__gallery__image">
+                                <input class="we__gallery__input" id="pic01" type="checkbox">
+                                <label class="we__gallery__label" for="pic01"
+                                    style="background-image: url(./img/gallery/gallery-1.png);"></label>
+                            </div>
+                            <div class="image">
+                                <input class="we__gallery__input" id="pic02" type="checkbox">
+                                <label class="we__gallery__label" for="pic02"
+                                    style="background-image: url(./img/gallery/gallery-2.png);"></label>
+                            </div>
+                            <div class="image">
+                                <input class="we__gallery__input" id="pic03" type="checkbox">
+                                <label class="we__gallery__label" for="pic03"
+                                    style="background-image: url(./img/gallery/gallery-3.png);"></label>
+                            </div>
+                            <div class="image">
+                                <input class="we__gallery__input" id="pic04" type="checkbox">
+                                <label class="we__gallery__label" for="pic04"
+                                    style="background-image: url(./img/gallery/gallery-4.png);"></label>
+                            </div>
+                            <div class="image">
+                                <input class="we__gallery__input" id="pic05" type="checkbox">
+                                <label class="we__gallery__label" for="pic05"
+                                    style="background-image: url(./img/gallery/gallery-5.png);"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="experts">
+                <div class="container">
+                    <div class="experts__wrapper">
+                        <h2 class="experts__title">Эксперты и трекеры программы</h2>
+                        <div class="carousel__wrapper">
+                            <button class="carousel__button carousel__button__left"
+                                onclick="scrollCarousel(-1)"></button>
+
+                            <div id="carousel" class="carousel__track">
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-1.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Юрий Ким</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-2.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Эшли Абрамс</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-3.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Фатими Юсуф</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-4.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Майкл Донован</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-1.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Юрий Ким</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-2.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Эшли Абрамс</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-3.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Фатими Юсуф</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-4.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Майкл Донован</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-1.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Юрий Ким</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                                <div class="product__card">
+                                    <img src="./img/manager/manager-2.png" alt="" class="experts__img">
+                                    <div class="experts__info">
+                                        <p class="experts__name">Эшли Абрамс</p>
+                                        <p class="experts__responsibility">Проведение исследования целевой аудитории
+                                            позволит сформировать Product market fit</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel__button carousel__button__right"
+                                onclick="scrollCarousel(1)"></button>
+                        </div>
+
+                    </div>
+            </section>
+            <section class="partners">
+                <div class="container">
+                    <div class="partners__wrapper">
+                        <h2 class="partners__title">Наши партнеры</h2>
+                        <div class="partners__box">
+                            <div class="partners__item">
+                                <img src="./img/partners/partners-1.svg" alt="" class="partners__item__img">
+                            </div>
+                            <div class="partners__item">
+                                <img src="./img/partners/partners-1.svg" alt="" class="partners__item__img">
+                            </div>
+                            <div class="partners__item">
+                                <img src="./img/partners/partners-1.svg" alt="" class="partners__item__img">
+                            </div>
+                            <div class="partners__item">
+                                <img src="./img/partners/partners-1.svg" alt="" class="partners__item__img">
+                            </div>
+                            <div class="partners__item">
+                                <img src="./img/partners/partners-1.svg" alt="" class="partners__item__img">
+                            </div>
+                            <div class="partners__item">
+                                <img src="./img/partners/partners-1.svg" alt="" class="partners__item__img">
+                            </div>
+                            <div class="partners__item">
+                                <img src="./img/partners/partners-1.svg" alt="" class="partners__item__img">
+                            </div>
+                            <div class="partners__item">
+                                <img src="./img/partners/partners-1.svg" alt="" class="partners__item__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="rule">
+                <div class="container">
+                    <div class="rule__wrapper">
+                        <h2 class="rule__title">Мы создаем международное сообщество экспертов и партнеров</h2>
+                        <p class="rule__description">Если вы или ваш бизнес может быть полезен IT командам при выходе на
+                            международные рынки, приглашем вас стать нашим
+                            партнером</p>
+                        <a href="#" class="rule__link">Стать партнером</a>
+                    </div>
+                </div>
+            </section>
+            <section class="events">
+                <div class="container">
+                    <div class="events__wrapper">
+                        <h2 class="events__title">Мероприятия и события</h2>
+                        <div class="events__box">
+                            <a href="#" class="events__item">
+                                <img src="./img/events/events-1.png" alt="" class="events__item__img">
+                                <div class="events__content">
+                                    <h3 class="events__content__title">Новый отчет по MENA</h3>
+                                    <p class="events__content__description">Аналитический отчет по рынкам Ближнего
+                                        Востока (инвесторы, объем раундов, ТОП сферы)</p>
+                                    <p class="events__content__date">22.11.2022</p>
+                                </div>
+                            </a>
+                            <a href="#" class="events__item">
+                                <img src="./img/events/events-2.png" alt="" class="events__item__img">
+                                <div class="events__content">
+                                    <h3 class="events__content__title">Вебинар по особенностям
+                                        рынков Ближнего Востока</h3>
+                                    <p class="events__content__description">Поговорим с экспертами рынков
+                                        в формате дискуссии</p>
+                                    <p class="events__content__date">22.11.2022</p>
+                                </div>
+                            </a>
+                            <a href="#" class="events__item">
+                                <img src="./img/events/events-3.png" alt="" class="events__item__img">
+                                <div class="events__content">
+                                    <h3 class="events__content__title">Вебинар по особенностям
+                                        рынков Ближнего Востока</h3>
+                                    <p class="events__content__description">Поговорим с экспертами рынков
+                                        в формате дискуссии</p>
+                                    <p class="events__content__date">22.11.2022</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__wrapper">
+                        <div class="feedback__content">
+                            <div class="feedback__content__text">
+                                <h2 class="feedback__content__title">Остались вопросы?</h2>
+                                <p class="feedback__content__description">Оставьте заявку и наша команда свяжется с вами
+                                </p>
+                            </div>
+                            <div class="feedback__content__contact">
+                                <h3 class="feedback__content__contact__title">Или напишите нам:</h3>
+                                <div class="feedback__content__contact__social-media">
+                                    <a href="#" class="contact__social-media__link"><img src="./img/telegram.svg" alt=""
+                                            class="contact__social-media__link__img"> Telegram</a>
+                                    <a href="#" class="contact__social-media__link"><img src="./img/whatsapp.svg" alt=""
+                                            class="contact__social-media__link__img"> Whatsapp</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feedback__form__container">
+                            <form class="feedback__form">
+                                <div class="feedback__form__group">
+                                    <input class="feedback__form__input" type="text" id="name" placeholder="Имя">
+                                </div>
+
+                                <div class="feedback__form__group">
+                                    <input class="feedback__form__input" type="email" id="email" placeholder="Почта">
+                                </div>
+
+                                <div class="feedback__form__group">
+                                    <div class="feedback__form__phone__group">
+                                        <select class="phone__select" id="country-code">
+                                            <option class="phone__option" value="+1">(971)</option>
+                                            <option class="phone__option" value="+44">(971)</option>
+                                            <option class="phone__option" value="+91">(971)</option>
+                                            <option class="phone__option" value="+61">(971)</option>
+                                            <option class="phone__option" value="+81">(971)</option>
+                                        </select>
+                                        <input class="feedback__form__input" type="text" id="phone" placeholder="">
+                                    </div>
+                                </div>
+
+                                <button class="feedback__form__btn" type="submit">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
-
-
-
     <footer class="footer">
         <div class="container">
-
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo"></a>
+                    <p class="footer__copyright">Все права защищены</p>
+                </div>
+                <nav class="footer__nav">
+                    <ul class="footer__menu">
+                        <li class="footer__menu__item">
+                            <a href="#" class="footer__menu__link">Кто мы?</a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a href="#" class="footer__menu__link">Услуги</a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a href="#" class="footer__menu__link">Акселератор</a>
+                        </li>
+                        <li class="footer__menu__item">
+                            <a href="#" class="footer__menu__link">Новости</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__contacts">
+                    <address class="footer__address">
+                        Dubai, Single Business Tower 1503, Business Bay<a href="mailto:webmaster@example.com"
+                            class="footer__address__mail">Sales@innoma.vc</a>
+                    </address>
+                </div>
+            </div>
         </div>
     </footer>
     </div>
-
 
     <script src="js/main.js"></script>
 </body>
